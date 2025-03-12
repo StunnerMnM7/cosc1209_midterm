@@ -12,6 +12,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Debug repository structure
+        run: ls -la  # This will list all files and directories
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
